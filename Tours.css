@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgb(11,175,229);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    color:red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* Tour Intro Section */
+#tour-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#tour-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#tour-intro p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tour Cards Section */
+#tours {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.tour-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tour-card {
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 20px;
+}
+
+.tour-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tour-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tour-info .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4a261;
+    margin-bottom: 20px;
+}
+
+.tour-info button {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tour-info button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e76f51;
+}
