@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tour - Destination Explore</title>
+    <link rel="stylesheet" href="Book.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Travel Explore</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Tours.html">Tours</a></li>
+                <li><a href="Destination.html">Destinations</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section id="booking-form">
+        <div class="container">
+            <h2>Book Your Tour</h2>
+            <p>Please fill in the form below to reserve your spot on one of our exciting tours!</p>
+            
+            <form id="bookingForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="tour">Select Tour:</label>
+                    <select id="tour" name="tour" required>
+                        <option value="">--Select a Tour--</option>
+                        <option value="Sagarmatha Base Camp">Sagarmatha Base Camp</option>
+                        <option value="Lumbini">Lumbini</option>
+                        <option value="Bhaktapur">Bhaktapur</option>
+                        <option value="Pokhara">Pokhara</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Select Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Requests (optional):</label>
+                    <textarea id="message" name="message" placeholder="Enter any additional requests or questions"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Destination Explore | All Rights Reserved</p>
+            <p>Contact us: <a href="mailto:info@destinationexplore.com">info@destinationexplore.com</a></p>
+        </div>
+    </footer>
+
+    <script src="Book.js"></script>
+</body>
+</html>
